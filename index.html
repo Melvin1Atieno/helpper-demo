@@ -1,495 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="assets/fonts/Feather/feather.css">
-    <link rel="stylesheet" href="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
-    <link rel="stylesheet" href="assets/libs/choices.js/public/assets/styles/choices.min.css">
-    <link rel="stylesheet" href="assets/libs/flickity-fade/flickity-fade.css">
-    <link rel="stylesheet" href="assets/libs/flickity/dist/flickity.min.css">
-    <link rel="stylesheet" href="assets/libs/highlightjs/styles/vs2015.css">
-    <link rel="stylesheet" href="assets/libs/jarallax/dist/jarallax.css">
-    <link rel="stylesheet" href="assets/libs/quill/dist/quill.core.css" />
-
-    <!-- Map -->
-    <link href='../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
-
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="assets/css/theme.min.css">
-
-    <title>Helppr</title>
-
-  
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156446909-2"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "UA-156446909-2");</script>
-
-  </head>
-  <body class="bg-light">
-
-    <!-- MODALS
-    ================================================== -->
-    <!--  -->
-    <div class="modal fade" id="modalSigninVertical" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card">
-
-            <!-- Close -->
-            <button type="button" class="modal-close close text-white" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-            <!-- Body -->
-            <div class="card-body">
-
-              <!-- Heading -->
-              <h2 class="mb-0 font-weight-bold text-center" id="modalSigninVerticalTitle">
-                Profile
-              </h2>
-
-              <!-- Text -->
-              <p class="mb-6 text-center text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
-              </p>
-
-              <!-- Form -->
-              <form class="mb-6">
-
-                <!-- Email -->
-                <div class="form-group">
-                  <label class="sr-only" for="modalSigninVerticalEmail">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
-                  </label>
-                  
-                </div>
-
-                <!-- Password -->
-                <div class="form-group mb-5">
-                  <label class="sr-only" for="modalSigninVerticalPassword">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
-                  </label>
-                  
-                </div>
-
-
-              </form>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+<!--navigation-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col col-lg-2">
+      <span class="svg nav-link">
+        <img src="./assets/img/icons/Helppr-logo.svg" alt="Add svg" />
+      </span>
     </div>
-
-
-
-    <!-- NAVBAR
-    ================================================== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container">
-
-        
-        <a class="navbar-brand" href="#!">Helppr
-         <!-- Brand  <img src="#" class="navbar-brand-img" alt="..."> -->
-        </a>
-
-        <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-
-          <!-- Toggler -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fe fe-x"></i>
-          </button>
-
-          <!-- Navigation -->
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarLandings" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"  data-toggle="modal" href="#modalSigninVertical" aria-haspopup="true" aria-expanded="false">
-                Profile
-            </li>
-          </ul>
-
-        </div>
-
+    <div class="col">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <span class="svg nav-link">
+              <img class="svg" src="./assets/img/icons/loupe.svg" alt="Add svg" />
+            </span>
+          </li>
+          <li class="nav-item">
+            <span class="svg nav-link">
+              <img class="svg" src="./assets/img/icons/plus.svg" alt="Add svg" />
+            </span>
+          </li>
+          <li class="nav-item">
+            <span class="svg nav-link">
+              <img class="svg" src="./assets/img/icons/pen.svg" alt="Add svg" />
+            </span>
+          </li>
+          <div class="line"></div>
+          <li class="nav-item">
+            <span class="svg nav-link">
+              <img class="svg" src="./assets/img/icons/headphones.svg" alt="Add svg" />
+            </span>
+          </li>
+          <li class="nav-item nav-end">
+            <span class="svg nav-link">
+              <img class="svg" src="./assets/img/icons/user.svg" alt="Add svg" />
+            </span>
+          </li>
+        </ul>
+    </div>
+    <hr>
+    <!--sidenav-->
+    <div class="row body">
+      <div class="sidebar col-md-auto">
+        <span class="nav-link nav-side">
+          <img class="svg" src="./assets/img/icons/home.svg" alt="Add svg" />
+          <p class="content"> My Feed</p>
+        </span>
+        <span class="header">
+          <p class="header-content">Filters</p>
+        </span>
+        <span class="nav-link nav-side">
+          <img class="svg" src="./assets/img/icons/bookmark.svg" alt="Add svg" />
+          <p class="content"> Bookmarks</p>
+        </span>
+        <span class="nav-link nav-side">
+          <img class="svg" src="./assets/img/icons/highlighter.svg" alt="Add svg" />
+          <p class="content">Highlights</p>
+        </span>
+        <span class="nav-link nav-side">
+          <img class="svg" src="./assets/img/icons/document.svg" alt="Add svg" />
+          <p class="content">Documents</p>
+        </span>
+        <span class="nav-link nav-side">
+          <img class="svg" src="./assets/img/icons/video.svg" alt="Add svg" />
+          <p class="content">Video</p>
+        </span>
+        <span class="header2">
+          <p class="header2-content">Tags</p>
+        </span>
+        <span class="nav-link nav-side">
+          <img class="svg" src="./assets/img/icons/tag-black-shape.svg" alt="Add svg" />
+          <p class="content">All Tags</p>
+        </span>
       </div>
-    </nav>
-
-    <!-- SIDEBAR
-    ================================================== -->
-    <div class="d-flex" id="wrapper">
-      <div class="bg-light border-right" id="sidebar-wrapper">
-        <div class="sidebar-heading">Feed</div>
-        <div class="list-group list-group-flush">
-          <a href="#" class="list-group-item list-group-item-action bg-light">one</a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">two</a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">three</a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">four</a>
-
-        </div>
-      </div>
-    
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-      <!-- ARTICLES
-      ================================================== -->
-      <section class="pt-7 pt-md-10" style="background-color: black;">
-        <div class="container-fluid">
-          <div class="row align-items-center mb-5">
-            <div class="col-12 col-md">
-
-              <!-- Heading -->
-              <h3 class="mb-0">
-                Latest 
-              </h3>
-
-              <!-- Text -->
-              <p class="mb-0 text-muted">
-              
-              </p>
-
-            </div>
-            <div class="col-12 col-md-auto">
-
-              <!-- Button -->
-              <a href="#!" class="btn btn-sm d-none d-md-inline">
-              
-              </a>
-
-            </div>
-          </div>
+      <div class="col" id="content">
+        <span><p class="content">My Feed</p></span>
+        <div class="row data">
           <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 d-flex">
-
-              <!-- Card -->
-              <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
-
-                <!-- Image -->
-                <a class="card-img-top" href="#!">
-
-                  <!-- Image -->
-                  <img src="assets/img/photos/photo-15.jpg" alt="..." class="card-img-top">
-
-                  <!-- Shape -->
-                  <div class="position-relative">
-                    <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                      <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>
-                    </div>
-                  </div>
-
-                </a>
-
-                <!-- Body -->
-                <a class="card-body" href="#!">
-
-                  <!-- Heading -->
-                  <h3>
-                    Lorem ipsum
-                  </h3>
-
-                  <!-- Text -->
-                  <p class="mb-0 text-muted">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
-                  </p>
-                </a>
-              </div>
-
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 d-flex">
-              <!-- Card -->
-              <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
-
-                <!-- Image -->
-                <a class="card-img-top" href="#!">
-
-                  <!-- Image -->
-                  <img src="assets/img/photos/photo-14.jpg" alt="..." class="card-img-top">
-
-                  <!-- Shape -->
-                  <div class="position-relative">
-                    <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                      <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>
-                    </div>
-                  </div>
-
-                </a>
-
-                <!-- Body -->
-                <a class="card-body" href="#!">
-
-                  <!-- Heading -->
-                  <h3>
-                    Lorem ipsum
-                  </h3>
-
-                  <!-- Text -->
-                  <p class="mb-0 text-muted">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
-                  </p>
-
-                </a>
-
-
-              </div>
-
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 d-flex">
-
-              <!-- Card -->
-              <div class="card mb-6 mb-md-0 shadow-light-lg lift lift-lg">
-
-                <!-- Image -->
-                <a class="card-img-top" href="#!">
-
-                  <!-- Image -->
-                  <img src="assets/img/photos/photo-7.jpg" alt="..." class="card-img-top">
-
-                  <!-- Shape -->
-                  <div class="position-relative">
-                    <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                      <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>
-                    </div>
-                  </div>
-
-                </a>
-
-                <!-- Body -->
-                <a class="card-body" href="#!">
-
-                  <!-- Heading -->
-                  <h3>
-                    Nature Can Save Your Creative Side.
-                  </h3>
-
-                  <!-- Text -->
-                  <p class="mb-0 text-muted">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
-                  </p>
-
-                </a>
-
-              </div>
-
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 d-flex">
-
-              <!-- Card -->
-              <div class="card d-lg-none shadow-light-lg lift lift-lg">
-
-                <!-- Image -->
-                <a class="card-img-top" href="#!">
-
-                  <!-- Image -->
-                  <img src="assets/img/photos/photo-5.jpg" alt="..." class="card-img-top">
-
-                  <!-- Shape -->
-                  <div class="position-relative">
-                    <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                      <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>
-                    </div>
-                  </div>
-
-                </a>
-
-                <!-- Body -->
-                <a class="card-body" href="#!">
-
-                  <!-- Heading -->
-                  <h3>
-                    Coffee Can Keep You Going, But At What Cost?
-                  </h3>
-
-                  <!-- Text -->
-                  <p class="mb-0 text-muted">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
-                  </p>
-
-                </a>
-
-                <!-- Meta -->
-                <a class="card-meta mt-auto" href="#!">
-
-                  <!-- Divider -->
-                  <hr class="card-meta-divider">
-
-                  <!-- Avatar -->
-                  <div class="avatar avatar-sm mr-2">
-                    <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                  </div>
-
-                  <!-- Author -->
-                  <h6 class="text-uppercase text-muted mr-2 mb-0">
-                    Ab Hadley
-                  </h6>
-
-                  <!-- Date -->
-                  <p class="h6 text-uppercase text-muted mb-0 ml-auto">
-                    <time datetime="2019-05-02">May 02</time>
-                  </p>
-
-                </a>
-
-              </div>
-
-            </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-      </section>
-      <!-- MORE
-      ================================================== -->
-      <section class="py-7 py-md-10" style="background-color: black;">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-9 col-lg-8 col-xl-7">
-
-              <!-- Button -->
-              <a href="#!" class="btn btn-block btn-outline-gray-300 d-flex align-items-center">
-                <span class="mx-auto">Load more</span> <i class="fe fe-arrow-right"></i>
-              </a>
-
-            </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-      </section>
+            <div class="col">image</div>
+            <div class="col">simple data</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-    <!-- FOOTER
-    ================================================== -->
-    <footer class="py-8 py-md-11 bg-gray-200">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4 col-lg-3">
-        
-            <!-- Brand -->
-            <!-- <img src="" alt="..." class="footer-brand img-fluid mb-2"> -->
-
-            <!-- Text -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Products
-            </h6>
-
-            <!--  -->
-            <p class="text-gray-700 mb-2">
-              Must Read articles
-            </p>
-
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-        
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Company
-            </h6>
-
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  About
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  blog
-                </a>
-              </li>
-            </ul>
-
-          </div>
-          <div class="col-6 col-md-4 offset-md-4 col-lg-3 offset-lg-0">
-        
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Resources
-            </h6>
-
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-0">
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Get Help
-                </a>
-              </li>
-            
-            </ul>
-
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-        
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Get The App
-            </h6>
-
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-0">
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                 
-                </a>
-              </li>
-              <li>
-                <a href="#!" class="text-reset">
-                  
-                </a>
-              </li>
-            </ul>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </footer>
-
-    <!-- JAVASCRIPT
-    ================================================== -->
-    <!-- Libs JS -->
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-    <script src="assets/libs/aos/dist/aos.js"></script>
-    <script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
-    <script src="assets/libs/countup.js/dist/countUp.min.js"></script>
-    <script src="assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-    <script src="assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
-    <script src="assets/libs/flickity-fade/flickity-fade.js"></script>
-    <script src="assets/libs/highlightjs/highlight.pack.min.js"></script>
-    <script src="assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax-video.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax-element.min.js"></script>
-    <script src="assets/libs/quill/dist/quill.min.js"></script>
-    <script src="assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
-    <script src="assets/libs/typed.js/lib/typed.min.js"></script>
-
-    <!-- Map -->
-    <script src='../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-
-    <!-- Theme JS -->
-    <script src="assets/js/theme.min.js"></script>
-
-
-  </body>
-
+</div>
+</body>
 </html>
