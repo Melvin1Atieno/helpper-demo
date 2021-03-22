@@ -34,8 +34,7 @@
     width: 15vw;
     background-color: #fff;
     overflow: auto;
-    margin-top: 25px;
-    margin-left: 25px;
+    width:auto;
   }
 .nav-side {
     display: flex;

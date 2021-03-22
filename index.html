@@ -9,90 +9,143 @@
   <title>Document</title>
 </head>
 <body>
-<!--navigation-->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col col-lg-2">
-      <span class="svg nav-link">
-        <img src="./assets/img/icons/Helppr-logo.svg" alt="Add svg" />
-      </span>
-    </div>
-    <div class="col">
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <span class="svg nav-link">
-              <img class="svg" src="./assets/img/icons/loupe.svg" alt="Add svg" />
-            </span>
-          </li>
-          <li class="nav-item">
-            <span class="svg nav-link">
-              <img class="svg" src="./assets/img/icons/plus.svg" alt="Add svg" />
-            </span>
-          </li>
-          <li class="nav-item">
-            <span class="svg nav-link">
-              <img class="svg" src="./assets/img/icons/pen.svg" alt="Add svg" />
-            </span>
-          </li>
-          <div class="line"></div>
-          <li class="nav-item">
-            <span class="svg nav-link">
-              <img class="svg" src="./assets/img/icons/headphones.svg" alt="Add svg" />
-            </span>
-          </li>
-          <li class="nav-item nav-end">
-            <span class="svg nav-link">
-              <img class="svg" src="./assets/img/icons/user.svg" alt="Add svg" />
-            </span>
-          </li>
-        </ul>
-    </div>
-    <hr>
-    <!--sidenav-->
-    <div class="row body">
-      <div class="sidebar col-md-auto">
-        <span class="nav-link nav-side">
-          <img class="svg" src="./assets/img/icons/home.svg" alt="Add svg" />
-          <p class="content"> My Feed</p>
-        </span>
-        <span class="header">
-          <p class="header-content">Filters</p>
-        </span>
-        <span class="nav-link nav-side">
-          <img class="svg" src="./assets/img/icons/bookmark.svg" alt="Add svg" />
-          <p class="content"> Bookmarks</p>
-        </span>
-        <span class="nav-link nav-side">
-          <img class="svg" src="./assets/img/icons/highlighter.svg" alt="Add svg" />
-          <p class="content">Highlights</p>
-        </span>
-        <span class="nav-link nav-side">
-          <img class="svg" src="./assets/img/icons/document.svg" alt="Add svg" />
-          <p class="content">Documents</p>
-        </span>
-        <span class="nav-link nav-side">
-          <img class="svg" src="./assets/img/icons/video.svg" alt="Add svg" />
-          <p class="content">Video</p>
-        </span>
-        <span class="header2">
-          <p class="header2-content">Tags</p>
-        </span>
-        <span class="nav-link nav-side">
-          <img class="svg" src="./assets/img/icons/tag-black-shape.svg" alt="Add svg" />
-          <p class="content">All Tags</p>
-        </span>
-      </div>
-      <div class="col" id="content">
-        <span><p class="content">My Feed</p></span>
-        <div class="row data">
-          <div class="row">
-            <div class="col">image</div>
-            <div class="col">simple data</div>
+
+<!-- TOP NAVIGATION
+================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/icons/Helppr-logo.svg" alt="" width="60" height="79">
+        </a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <span class="svg nav-link">
+                <img class="svg" src="./assets/img/icons/loupe.svg" alt="Add svg" />
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="svg nav-link">
+                <img class="svg" src="./assets/img/icons/plus.svg" alt="Add svg" />
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="svg nav-link">
+                <img class="svg" src="./assets/img/icons/pen.svg" alt="Add svg" />
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="svg nav-link">
+                <img class="svg" src="./assets/img/icons/headphones.svg" alt="Add svg" />
+              </span>
+            </li>
+            <li class="nav-item nav-end">
+              <span class="svg nav-link">
+                <img class="svg" src="./assets/img/icons/user.svg" alt="Add svg" />
+              </span>
+            </li>
+            </ul>
           </div>
         </div>
-      </div>
+      </nav>
+    
+    <!-- SIDEBAR
+    ================================================== -->
+    <div class="container-fluid">
+        <div class="row">
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+            <div class="sidebar col-md-auto">
+              <ul class="nav flex-column">
+              <span class="nav-link nav-side">
+                <img class="svg" src="./assets/img/icons/home.svg" alt="Add svg" />
+                <p class="content"> My Feed</p>
+              </span>
+              <span class="header">
+                <p class="header-content">Filters</p>
+              </span>
+              <span class="nav-link nav-side">
+                <img class="svg" src="./assets/img/icons/bookmark.svg" alt="Add svg" />
+                <p class="content"> Bookmarks</p>
+              </span>
+              <span class="nav-link nav-side">
+                <img class="svg" src="./assets/img/icons/highlighter.svg" alt="Add svg" />
+                <p class="content">Highlights</p>
+              </span>
+              <span class="nav-link nav-side">
+                <img class="svg" src="./assets/img/icons/document.svg" alt="Add svg" />
+                <p class="content">Documents</p>
+              </span>
+              <span class="nav-link nav-side">
+                <img class="svg" src="./assets/img/icons/video.svg" alt="Add svg" />
+                <p class="content">Video</p>
+              </span>
+              <span class="header2">
+                <p class="header2-content">Tags</p>
+              </span>
+              <span class="nav-link nav-side">
+                <img class="svg" src="./assets/img/icons/tag-black-shape.svg" alt="Add svg" />
+                <p class="content">All Tags</p>
+              </span>
+            </div>
+          </nav>
+          <!-- CONTENT
+          ================================================== -->
+          <main class="row col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div>
+              <span><p class="content">My Feed</p></span>
+            </div>
+            <div class="col bg-dark ">
+              <p class="card mb-3 bg-dark text-light"> March 11</p>
+              <div class="row mb-2">
+                <div class="col-md-10 bg-dark text-light">
+                  <div class="card mb-3 bg-dark text-light">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="90%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing eli</h5>
+                          <button type="button" class="btn btn-light">
+                             <span class="badge bg-light">X</span>
+                          </button>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="card mb-3 bg-dark text-light"> March 14</p>
+              <div class="row mb-2">
+                <div class="col-md-10 bg-dark text-light">
+                  <div class="card mb-3 bg-dark text-light">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="90%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing eli</h5>
+                          <button type="button" class="btn btn-light">
+                            <span class="badge bg-light">X</span>
+                          </button>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
     </div>
-  </div>
-</div>
+
+     
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
 </body>
 </html>
